@@ -1,0 +1,95 @@
+* {
+    font-family: Arial;
+}
+
+:root {
+    --accentColour: #0097A9;
+}
+
+table {
+    table-layout: fixed;
+    width: 100%;
+    position: center;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+th, td {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    padding: 4px;
+}
+
+td, th {
+    border-left: 1px solid var(--accentColour);
+}
+
+td, th:last-child {
+    border-right: 1px solid var(--accentColour);
+}
+
+tr:nth-child(even) {
+    background-color:#F0F0F0;
+}
+
+h1 {
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-weight: bold;
+    text-transform: capitalize;
+    -webkit-text-fill-color: var(--accentColour);
+}
+
+th {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-align: left;
+    -webkit-text-fill-color: var(--accentColour);
+}
+
+thead {
+    background-color: #0097A9;
+    -webkit-text-fill-color: white;
+    border: 1px solid var(--accentColour);
+}
+
+thead th {
+    -webkit-text-fill-color: white;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-color: white;
+}
+
+.pageHeader {
+    padding: 30px;
+    text-align: left;
+    background-image: url(https://cdn.ucl.ac.uk/indigo/images/ucl-logo.svg);
+    background-color: var(--accentColour);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right bottom 10px;
+    line-height: 12px;
+}
+
+.pageHeader h1 {
+    -webkit-text-fill-color: white;
+}
+
+.pageHeader p {
+    -webkit-text-fill-color: var(--accentColour);
+}
+
+.forcePageBreak {
+    page-break-before: always;
+}
+
+.mainBody {
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 30px;
+    display: block;
+}
